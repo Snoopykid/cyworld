@@ -130,7 +130,6 @@
 }
 
 
-
 /* 오른쪽 영역 */
 .wrapper__right {
     width: 524px;
@@ -171,4 +170,29 @@ iframe {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.navigation {
+	width: 62px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	position: absolute;
+	left: 784px;
+	top: 110px;
+}
+
+.navigation__item {
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: white;
+	background-color: #298eb5;
+	border: 1px solid black;
+	border-radius: 0px 10px 10px 0px;
+	font-size: 10px;
+	cursor: pointer;
 }
