@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <title>윤비아이님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
     <link href="./styles/index.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a1797f53f3.js" crossorigin="anonymous"></script>    <script>
-        function menuHome(){
+    <script src="https://kit.fontawesome.com/a1797f53f3.js" crossorigin="anonymous"></script>
+    <script>
+        function menuHome() {
             document.getElementById("contentFrame").setAttribute("src", "home.html")
             document.getElementById("menuHome").style = "color: black; background-color: white;"
             document.getElementById("menuGame").style = "color: white; background-color: #298EB5;"
             document.getElementById("menuJukebox").style = "color: white; background-color: #298EB5;"
         }
 
-        function menuGame(){
+        function menuGame() {
             document.getElementById("contentFrame").setAttribute("src", "game.html")
             document.getElementById("menuHome").style = "color: white; background-color: #298EB5;"
             document.getElementById("menuGame").style = "color: black; background-color: white;"
             document.getElementById("menuJukebox").style = "color: white; background-color: #298EB5;"
         }
 
-        function menuJukebox(){
+        function menuJukebox() {
             document.getElementById("contentFrame").setAttribute("src", "jukebox.html")
             document.getElementById("menuGame").style = "color: white; background-color: #298EB5;"
             document.getElementById("menuJukebox").style = "color: black; background-color: white;"
         }
     </script>
 </head>
+
 <body>
     <div class="background">
         <div class="outerbox">
@@ -33,7 +36,7 @@
                     <div class="wrapper__left__header">
                         <div class="today">
                             TODAY
-                            <span class="zero">0</span>  |  TOTAL
+                            <span class="zero">0</span> | TOTAL
                             <span class="count">12345</span>
                         </div>
                     </div>
@@ -91,4 +94,5 @@
         </div>
     </div>
 </body>
+
 </html>

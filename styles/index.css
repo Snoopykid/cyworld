@@ -136,7 +136,7 @@
     height: 472px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
+    justify-content: flex-end;
     padding-left: 5px;
 }
 
@@ -157,7 +157,9 @@
     background-color: white;
 }
 
-.right__header__title, .right__header__setting, .arrow {
+.right__header__title,
+.right__header__setting,
+.arrow {
     color: #55B2E4;
     font-size: 9px;
 }
@@ -173,26 +175,26 @@ iframe {
 }
 
 .navigation {
-	width: 62px;
-	height: 100px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    width: 62px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-	position: absolute;
-	left: 784px;
-	top: 110px;
+    position: absolute;
+    left: 784px;
+    top: 110px;
 }
 
 .navigation__item {
-	width: 60px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	color: white;
-	background-color: #298eb5;
-	border: 1px solid black;
-	border-radius: 0px 10px 10px 0px;
-	font-size: 10px;
-	cursor: pointer;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #298eb5;
+    border: 1px solid black;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 10px;
+    cursor: pointer;
 }
