@@ -76,12 +76,12 @@ function getTokenTimerConfirm() {
     "인증완료";
   alert("인증이 완료되었습니다.");
 
-  document.getElementById("signup__button").style =
+  document.getElementById("Sign_up__button").style =
     "background-color: #FFFFFF; color: #0068FF; border: 1px solid #0068FF ;cursor: pointer;";
-  document.getElementById("signup__button").removeAttribute("disabled");
+  document.getElementById("Sign_up__button").removeAttribute("disabled");
 }
 
-function signup() {
+function Sign_up() {
   const email = document.getElementById("email").value;
   const writer = document.getElementById("writer").value;
   const password1 = document.getElementById("password1").value;
