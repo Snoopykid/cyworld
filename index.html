@@ -3,89 +3,8 @@
   <head>
     <title>도토리도둑님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
     <link href="./styles/index.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/a1797f53f3.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      function menuHome() {
-        document.getElementById("contentFrame").setAttribute("src", "home.html");
-        document.getElementById("menuHome").style =
-          "color: black; background-color: white;";
-        document.getElementById("menuDiary").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuJukebox").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuBoard").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuGuestbook").style =
-          "color: white; background-color: #298EB5;";
-      }
-
-      function menuDiary() {
-        document
-          .getElementById("contentFrame")
-          .setAttribute("src", "Diary.html");
-        document.getElementById("menuHome").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuDiary").style =
-          "color: black; background-color: white;";
-        document.getElementById("menuJukebox").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuBoard").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuGuestbook").style =
-          "color: white; background-color: #298EB5;";
-      }
-
-      function menuJukebox() {
-        document
-          .getElementById("contentFrame")
-          .setAttribute("src", "jukebox.html");
-        document.getElementById("menuHome").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuDiary").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuJukebox").style =
-          "color: black; background-color: white;";
-        document.getElementById("menuBoard").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuGuestbook").style =
-          "color: white; background-color: #298EB5;";
-      }
-
-      function menuBoard() {
-        document
-          .getElementById("contentFrame")
-          .setAttribute("src", "Board.html");
-        document.getElementById("menuHome").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuDiary").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuJukebox").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuBoard").style =
-          "color: black; background-color: white;";
-        document.getElementById("menuGuestbook").style =
-          "color: white; background-color: #298EB5;";
-      }
-
-      function menuGuestbook() {
-        document
-          .getElementById("contentFrame")
-          .setAttribute("src", "Guestbook.html");
-        document.getElementById("menuHome").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuDiary").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuJukebox").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuBoard").style =
-          "color: white; background-color: #298EB5;";
-        document.getElementById("menuGuestbook").style =
-          "color: black; background-color: white;";
-      }
-    </script>
+    <script src="https://kit.fontawesome.com/a1797f53f3.js" crossorigin="anonymous"></script>
+    <script src="./script/index.js"></script>
   </head>
 
   <body>
@@ -164,7 +83,7 @@
             <div class="navigation__item" id="menuDiary" onclick="menuDiary()">
               다이어리
             </div>
-            <div class="navigation__item" id="menuJukebox" onclick="menuJukebox()">
+            <div class="navigation__item" id="menuGallery" onclick="menuGallery()">
               사진첩
             </div>
             <div class="navigation__item" id="menuBoard" onclick="menuBoard()">

@@ -1,3 +1,4 @@
+/* 공통 스타일 */
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -6,25 +7,27 @@
 html, body {
     width: 100%;
     height: 100%;
+    overflow-y: auto; /* 스크롤 기능 추가 */
 }
 
 .wrapper {
     width: 100%;
-    height: 100%;
-    padding: 10px 20px 20px 10px;
+    min-height: 100%; /* 전체 높이를 충분히 크게 설정 */
+    padding: 20px 30px 30px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 
-.wrapper__header {
+.wrapper__body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: auto;
 }
 
-.header__title {
+.contents__title {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,6 +37,7 @@ html, body {
     color: #55b2d4;
     font-size: 13px;
     font-weight: 700;
+    margin-bottom: 5px;
 }
 
 .subtitle {
@@ -44,83 +48,75 @@ html, body {
 .divideLine {
     width: 100%;
     border-top: 1px solid gray;
+    margin-bottom: 5px;
 }
 
-.Diary__container {
-    border: 1px solid gray;
-    border-radius: 15px;
-    width: 222px;
-    height: 168px;
+.passwordInput {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px;
+    background-color: #55b2d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.registerButton {
+    align-self: flex-end; /* 버튼을 우측 끝으로 정렬 */
+}
+
+.diaryEntries ul, .storyEntries ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.diaryEntries li, .storyEntries li {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 15px 20px 15px;
-    background-color: #f6f6f6;
 }
 
-.Diary__title {
-    font-size: 15px;
-    font-weight: 900;
-}
-
-.Diary__subtitle {
-    font-size: 11px;
-}
-
-#word__result {
-    font-size: 11px;
-    font-weight: 700;
-}
-
-.word__text {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.textbox {
-    width: 140px;
-    height: 24px;
-    border-radius: 5px;
-    padding: 4px 8px;
-}
-
-.textbox::placeholder {
-    font-size: 11px;
-    color: #999999;
-}
-
-.search {
-    font-size: 11px;
-    font-weight: 700;
-    width: 38px;
-    height: 24px;
-}
-
-.Diary__lotto__number {
-    width: 130px;
-    height: 21px;
-    background-color: #ffe400;
-    border-radius: 8px;
-    border: 1px solid black;
-    font-size: 10px;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 8px;
-    margin-bottom: 11px;
+.friendPosts, .storyEntries {
     margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
 }
 
-.wrapper__lotto__btn {
+.friendPosts div, .storyEntries div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    border: 1px solid black;
-	border-radius: 5px;
-	font-weight: 700;
-	font-size: 11px;
-	width: 62px;
-	height: 24px;
-	background-color: white;
+.friendPosts button, .storyEntries button {
+    background-color: #ff6f61;
+    padding: 10px 15px;
+    font-size: 8px;
+    margin: 1px 1px;
+    align-self: flex-end; /* 버튼을 우측 끝으로 정렬 */
 }
